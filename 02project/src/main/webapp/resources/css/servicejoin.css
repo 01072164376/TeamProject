@@ -1,0 +1,80 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#c_p{
+    cursor: pointer;
+}
+#c_d{
+    cursor: default;
+}
+#h3{
+    margin: 20px 0 0 210px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px black ;
+}
+.main{
+    padding-left: 70px;
+}
+.list{
+    margin-top: 15px;
+    font-size: 18px;
+    display: table-row-group;
+    float: left;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#list_in{
+    width: 190px; height: 100px;
+    border: 1px solid black;
+    background: darkgray;
+}
+#list_in>p{
+    padding-top: 40px;
+}
+#list_on{
+    width: 190px; height: 50px;
+    border: 1px solid black;
+    background: gray;
+}
+#list_on>p{
+    padding-top: 12px;
+}
+.join_main{
+    margin: 15px 0px 0px 120px;
+}
+#js{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#f_s{
+    font-size: 20px;
+    padding: 10px;
+}
+#t_s{
+    width: 490px;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px;
+}
+#c_s{
+    width: 494px;
+    height: 200px;
+    font-size: 15px;
+    padding: 5px;
+}
+#tc{
+    text-align: center;
+}
+#god{
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}

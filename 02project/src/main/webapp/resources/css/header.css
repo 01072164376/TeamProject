@@ -1,0 +1,226 @@
+/*상단바 메뉴*/
+
+/* ai로고 */
+#ai {
+    height: 75px;
+    width: 95px;
+    float: left;
+    margin-left: 5px;
+
+}
+
+#bannerMid {
+    width: 100%;
+    height: 65px;
+}
+/*ai로고 끝*/
+
+#bannerTop {
+    margin: auto;
+    justify-content: center;
+    height: 80px;
+    background-color: white(33, 33, 33, 0.813);
+    /* border-left: 1px solid black; */
+    
+}
+
+#bannerTopLeft {
+    width: 24%;
+    margin-left: 18%;
+    float: left;
+    position: relative;
+    white-space: nowrap;
+}
+
+#bannerTopRight {
+    float: right;
+    margin-top: 1%;
+    margin-right: 18%;
+    white-space: nowrap;
+}
+
+
+#bannerTop .topLeft {
+    color: black;
+    font-size: 13px;
+    text-decoration-line: none;
+    vertical-align: middle;
+    justify-content: center;
+    display: inline;
+}
+
+#bannerTop .c_a{
+    color: black;
+    font-size: 6px;
+    text-decoration-line: none;
+    vertical-align: middle;
+    margin: 7px;
+    justify-content: center;
+    display: inline-block;
+}
+#topTextLeft {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#topTextRight{
+	display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#topTextLeft {
+    margin-top: 13px;
+}
+
+.c_p{
+	color: black;
+    font-size: 14px;
+    text-decoration-line: none;
+    vertical-align: middle;
+    margin: 7px;
+    justify-content: center;
+    display: inline-block;
+	cursor:default;
+}
+
+.c_a{
+	color: black;
+    font-size: 7px;
+    text-decoration-line: none;
+    vertical-align: middle;
+    margin: 7px;
+    justify-content: center;
+    display: inline-block;
+}
+
+/*상단바 메뉴끝*/
+
+/*dropdown 메뉴*/
+.navbar button {
+
+    border: none;
+    color: black;
+    font-size: 15px;
+    float: left;
+    margin: auto;
+    justify-content: center;
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+#dropdown a {
+    margin: auto;
+    margin-bottom: 1%;
+    background-color: none;
+}
+
+.navbar button:hover {
+    border: none;
+    cursor:auto;
+
+}
+
+.linkContents:hover {
+    border: none;
+    cursor: pointer;
+}
+
+#dropdown {
+    display: flex;
+    width: 65%;
+    height: 100%;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 18%;
+    position: relative;
+    text-align: center;
+
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+#dropdown a {
+    text-decoration: none;
+}
+
+#dropdown:hover #dropDownMenu {
+    display: block;
+}
+
+#dropDownMenu {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(222, 222, 222);
+    margin-top: 56px;
+    display: none; /*수정작업시flex 기본none*/
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 101;
+    text-decoration: none;
+}
+
+.dorpDownContents {
+    width: 18%; /*드롭다운 사이 간격*/
+    height: 270px;
+    color: black;
+    /* padding: 16px ; */
+    margin: auto;
+    padding: auto;
+    text-decoration: none;
+    display: block;
+    position:relative;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px
+}
+
+#dropDownLine {
+    border-right: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.linkContents {
+    font-size: 12px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.linkContents4 {
+    font-size: 12px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+
+}
+.linkContents5 {
+    font-size: 12px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+
+}
+/*dropdown메뉴 끝*/

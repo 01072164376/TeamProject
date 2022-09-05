@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.dao.ReplyDao">
+	<delete id="deleteBno">
+		delete from reply where bno =#{bno}
+	</delete>
+	<select id="list" resultType="ReplyDto">
+		select
+		*
+		from
+		reply
+		where bno =
+		#{bno}
+		order by rno desc
+	</select>
+	<insert id="insert">
+		insert into reply (bno, recontent, reid)
+		values (#{bno},#{recontent},#{reid})
+	</insert>
+
+	<update id="update">
+		update reply set recontent = #{recontent}
+		where rno = #{rno}
+	</update>
+
+	<delete id="delete">
+		delete from reply where rno =#{rno}
+	</delete>
+
+	<select id="listPage" resultType="ReplyDTO">
+		<![CDATA[
+		select
+		rno, bno, recontent, reid, day
+		from
+		(
+		select /*+INDEX_DESC(reply rek_board))*/
+		rownum rn, rno, bno, recontent, reid, day
+		from reply
+		where bno = #{bno}
+		and rno > 0
+		and rownum <= #{pm.page} * #{pm.perPageNum}
+		)
+		where rn > ( #{pm.page} -1) * #{pm.perPageNum}
+		]]>
+	</select>
+	<select id="count" resultType="int">
+ <![CDATA[
+ select 
+   count(bno) 
+ from 
+   reply 
+ where 
+   bno =#{bno} 
+ ]]>
+	</select>
+</mapper>
+

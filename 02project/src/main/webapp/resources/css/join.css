@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.join_main{
+    margin: 30px 20px 20px 20px;
+    text-align: center;
+}
+.join_main>input{
+    margin: 5px;
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.join_main>select{
+    margin: 5px;
+    width: 415px;
+    height: 40px;
+    padding-left: 5px;
+}
+.join{
+    text-align: center;
+}
+.join>input{
+    margin-bottom: 50px;
+    width: 100px;
+    height: 40px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.idcheck{
+   width:75px;
+   height:35px;
+   text-align: center;
+}

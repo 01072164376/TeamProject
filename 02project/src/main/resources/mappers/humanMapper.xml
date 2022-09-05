@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.HumanDao">
+<select id="list" resultType="HumanDto">
+select * from human
+</select>
+<insert id="insert">
+insert into human(id,pw,pwcheck,gender,name,nickname,age,birthday,addr1,addr2,addr3,phone,email)
+values(#{id},#{pw},#{pwcheck},#{gender},#{name},#{nickname},#{age},#{birthday},#{addr1},#{addr2},#{addr3},#{phone},#{email})
+</insert> 
+<select id="idcheck" parameterType="String" resultType="Integer">
+select count(*) from human where id=#{id}
+</select>
+<select id="login" resultType="HumanDto">
+select * from human where id=#{id}
+</select>
+<select id="find_id" resultType="HumanDto">
+select id,name,phone,email from human where name=#{name} and phone=#{phone} and email=#{email}
+</select>
+<delete id="delete">
+delete human where id=#{id}
+</delete>
+</mapper>

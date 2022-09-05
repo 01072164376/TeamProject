@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.dao.MainAiDao">
+<insert id="insertKids">
+insert into kids(name,score,img)
+values(#{name},#{score},#{img})
+</insert> 
+
+<insert id="insertNovel">
+insert into Novel(name,score,img)
+values(#{name},#{score},#{img})
+</insert> 
+
+<insert id="insertSelfImprove">
+insert into selfimprove(name,score,img)
+values(#{name},#{score},#{img})
+</insert> 
+
+
+<select id="BestKids" resultType="CrawlingDto">
+<![CDATA[select name,img from kids where img is not null and name in(select name from (select name,sum(score) as score from kids group by name order by score desc) where rownum<=7)]]>
+
+</select>
+
+<select id="BestNovel" resultType="CrawlingDto">
+<![CDATA[select name,img from Novel where img is not null and name in(select name from (select name,sum(score) as score from Novel group by name order by score desc) where rownum<=7)]]>
+
+</select>
+
+<select id="BestSelfImprove" resultType="CrawlingDto">
+<![CDATA[select name,img from SelfImprove where img is not null and name in(select name from (select name,sum(score) as score from SelfImprove group by name order by score desc) where rownum<=7)]]>
+
+</select>
+
+
+<delete id="deleteKids">
+delete from kids
+</delete>
+
+
+<delete id="deleteNovel">
+delete from novel
+</delete>
+
+
+<delete id="deleteSelfImprove">
+delete from selfImprove
+</delete>
+</mapper>
+
+

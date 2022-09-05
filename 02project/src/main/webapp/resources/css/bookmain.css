@@ -1,0 +1,123 @@
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+.book_list{
+	margin-top:0px;
+	
+}
+  .book_item{
+    position: relative;
+    /* top: -25%;
+     */
+    overflow: hidden;
+    display: inline-block;
+    width: 32%;
+    /* padding: 0px 3.487179% 32px;
+     */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: ayto;
+    float:left;
+  }
+
+  .book_item>a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    
+  }
+.book_item>a:hover {
+  	
+    text-decoration: underline;
+}
+  .thumb {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    margin-left:10px;
+  }
+
+.thumb img {
+    width: 230px !important;
+    height: 160px !important;
+    vertical-align: middle;
+}
+
+  .cont {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 126px;
+    padding-top: 16px;
+    max-height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .title_inner .date {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: #707070;
+    margin-left:25px;
+}
+  .title_inner .date:after {
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin: 0 12px;
+    background: #dfdfdf;
+    vertical-align: middle;
+    content: '';
+  }
+  .title_inner .category {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+    color: #707070;
+}
+.title {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 40px;
+    margin-top: 7px;
+    margin-left: 25px;
+    
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.3;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.info_inner dl {
+    overflow: hidden;
+}
+.info_inner dt {
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    margin-left: 25px;
+    
+}
+.info_inner dd {
+    display: block;
+    margin-top: 2px;
+    font-size: 15px;
+    color: #707070;
+    margin-left: 25px;
+    
+}
+  /* 도서소개 부분 끝 */
