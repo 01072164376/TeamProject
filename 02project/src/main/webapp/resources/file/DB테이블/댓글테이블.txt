@@ -1,0 +1,8 @@
+CREATE TABLE reply(
+rno number generated always as IDENTITY,
+bno number not null references bbs(bno) on delete cascade,
+reid varchar(30) not null,
+recontent varchar(3000) not null,
+day date default sysdate,
+constraint rek_board PRIMARY key(rno)
+);

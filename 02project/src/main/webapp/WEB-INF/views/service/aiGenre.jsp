@@ -17,7 +17,7 @@
 function genreSerch() {
 	$('#result').html("로딩중입니다. 잠시만 기다려주세요.");
 
-	dfd.read_csv('/ex/resources/file/genreData.csv').then(function(data){
+	dfd.read_csv('/ex/resources/csv/genreData.csv').then(function(data){
 	       // console.log(data);
 	        //data.print(); //읽어온 데이터를 표형태로 출력한다.
 		//종속변수 컬럼 선정

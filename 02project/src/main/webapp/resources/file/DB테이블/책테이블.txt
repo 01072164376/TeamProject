@@ -1,0 +1,45 @@
+--테이블 선언--
+create TABLE books(
+    bId nvarchar2(50) ,
+    bName nvarchar2(50),
+    bGenre nvarchar2(50),
+    bWriter nvarchar2(50),
+    bPublisher nvarchar2(50),
+    bDate date,
+    bBorrow nvarchar2(50) 
+);
+commit;
+
+--데이터값 추가--
+--역사--
+insert into books values('1','100단어로 읽는 중세 이야기','역사','김동섭','책과함께','2022-07-25','가능');
+insert into books values('2','태평양의 발견과 근대 조선','역사','고정휴','나남출판사','2022-07-15','가능');
+insert into books values('3','유럽의 문 우크라이나','역사','세르히 플로히','한길사','2022-06-30','가능');
+insert into books values('4','사건으로 보는 한국 현대사','역사','모지현','더좋은책','2022-07-25','가능');
+insert into books values('5','요즘, 일본','역사','공태희','시프','2022-06-30','가능');
+--청소년--
+insert into books values('6','내 마음은 존버 중입니다','청소년','웰시','풀빛','2022-07-25','가능');
+insert into books values('7','누구에게나 공부하고 싶은 순간은 온다','청소년','김규민','콘택트','2022-07-13','가능');
+insert into books values('8','페퍼민트','청소년','백온유','창비','2022-07-25','가능');
+insert into books values('9','소울메이커','청소년','김태라','고즈넉이엔티','2022-07-10','가능');
+insert into books values('10','멸종을 선택하지 마세요','청소년','김정민','우리학교','2022-06-07','가능');
+--자연과학--
+insert into books values('11','과재식의 먹는 화학 이야기','자연과학','곽재식','북바이북','2022-08-01','가능');
+insert into books values('12','그래서 우리는 달에 간다','자연과학','곽재식','동아시아','2022-08-03','가능');
+insert into books values('13','운동의 역설','자연과학','허먼 폰처','동녘사이언스','2022-07-15','가능');
+insert into books values('14','내가 된다는 것','자연과학','아닐 세스','흐름 출판','2022-06-30','가능');
+insert into books values('15','우주쓰레기가 온다','자연과학','최은정','갈매나무','2021-07-01','가능');
+--예술--
+insert into books values('16','스케치 아프리카','예술','김충원','진선북스','2022-06-14','가능');
+insert into books values('17','저항의 예술','예술','조 리폰','씨네21북스','2022-07-11','가능');
+insert into books values('18','고전적 양식','예술','Charles Rosen','풍월당','2021-12-25','가능');
+insert into books values('19','위대한 서양미술사1','예술','권이선','가로책길','2021-11-18','가능');
+insert into books values('20','벌거벗은 미술관','예술','양정무','창비','2021-08-13','가능');
+--자기계발--
+insert into books values('21','멘탈을 바꿔야 인생이 바뀐다','자기계발','박세니','마인드셋','2022-04-30','가능');
+insert into books values('22','역행자','자기계발','자청','웅진지식하우스','2022-05-30','가능');
+insert into books values('23','히든 스토리','자기계발','킨드라 홀','윌북','2022-05-25','가능');
+insert into books values('24','세븐','자기계발','전인구','차이정원','2022-05-18','가능');
+insert into books values('25','공부의 본질','자기계발','이윤규','빅피시','2021-10-15','가능');
+
+select * from books;

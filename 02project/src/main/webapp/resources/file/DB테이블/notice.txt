@@ -1,0 +1,31 @@
+create table notice(
+bno number generated always as IDENTITY,
+title nvarchar2(150),
+content nvarchar2(500),
+day date default sysdate,
+viewCount number default 0,
+writer nvarchar2(30)
+);
+
+insert into notice(title,content,writer) values('2022년 하반기 평생교육 프로그램 수강생 모집 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('📣 '책 읽는 서울광장'에서 만나는 동네책방, 2022 움직이는 책방 행사 안 ... ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('[독서아카데미] 🌠현대과학 속 철학이야기: 📽️영화로 책 읽기📚 ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('[공지] 10년 이상 장기 운영한 '서울시 지역서점' 홍보물 제작 지원 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('9월, 도심 속 휴식공간을 넘어 엄마아빠가 행복한 책읽는 서울광장이 다시 시작합니다','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('자료실 퍼즐 이벤트「책 제목을 찾아라!」 당첨자 발표 ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('6월 13일(월) ~ 18일(토) 전체 장서점검으로 인한 자료실 휴실 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 제18차 희망도서 및 제5차 수시도서 구입 목록','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 하반기 평생교육 프로그램 수강생 모집 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 제6차 수시도서 및 제23, 24차 희망도서 구입 목록','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 하반기 평생교육 프로그램 수강생 모집 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('📣 '책 읽는 서울광장'에서 만나는 동네책방, 2022 움직이는 책방 행사 안 ... ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('[독서아카데미] 🌠현대과학 속 철학이야기: 📽️영화로 책 읽기📚 ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('[공지] 10년 이상 장기 운영한 '서울시 지역서점' 홍보물 제작 지원 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('9월, 도심 속 휴식공간을 넘어 엄마아빠가 행복한 책읽는 서울광장이 다시 시작합니다','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('자료실 퍼즐 이벤트「책 제목을 찾아라!」 당첨자 발표 ','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('6월 13일(월) ~ 18일(토) 전체 장서점검으로 인한 자료실 휴실 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 제18차 희망도서 및 제5차 수시도서 구입 목록','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 하반기 평생교육 프로그램 수강생 모집 안내','ㅇㅇ','관리자');
+insert into notice(title,content,writer) values('2022년 제6차 수시도서 및 제23, 24차 희망도서 구입 목록','ㅇㅇ','관리자');
+
+commit;

@@ -1,0 +1,15 @@
+CREATE TABLE human(
+id nvarchar2(30) primary key,
+pw nvarchar2(30) not null,
+pwcheck nvarchar2(30) not null,
+gender nvarchar2(20) not null,
+name nvarchar2(50) not null,
+nickname nvarchar2(50) not null,
+age number(4) not null,
+birthday date,
+addr1 number(5) not null,
+addr2 nvarchar2(100) not null,
+addr3 nvarchar2(100) not null,
+phone nvarchar2(11) not null,
+email nvarchar2(100) not null
+);

@@ -1,0 +1,11 @@
+CREATE TABLE bbs(
+bno number generated always as IDENTITY,
+title varchar(100) not null,
+content varchar(3000) not null,
+day date default sysdate,
+click number default 0,
+id varchar(30) not null,
+gender varchar(20) not null,
+checkit varchar(30) not null,
+constraint pk_board PRIMARY key(bno)
+);

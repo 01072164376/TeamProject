@@ -1,0 +1,23 @@
+create table kids(
+name nvarchar2(150) not null,
+cno number,
+score number,
+img nvarchar2(200)
+);
+
+
+
+create table novel(
+name nvarchar2(150) not null,
+cno number,
+score number,
+img nvarchar2(200)
+);
+
+
+create table selfimprove(
+name nvarchar2(150) not null,
+cno number,
+score number,
+img nvarchar2(200)
+);
