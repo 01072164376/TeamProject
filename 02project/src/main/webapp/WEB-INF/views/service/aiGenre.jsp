@@ -78,19 +78,15 @@ function genreSerch() {
 	            console.log(result[0]);
 	            console.log(result[0][0]);
 	            
-	            const arr = result[0];
-                const maxValue = Math.max.apply(null, arr);
-                console.log(maxValue);
-	            
-	            if(result[0][0]==maxValue){
+	            if(result[0][0]>0.1){
 		            $('#result').html("입력하신 성별,나이에 대해 가장 높은 데이터는 어린이 입니다");
-	            }else if(result[0][1]==maxValue){
+	            }else if(result[0][1]>0.1){
 		            $('#result').html("입력하신 성별,나이에 대해 가장 높은 데이터는 취업 입니다");
-	            }else if(result[0][2]==maxValue){
+	            }else if(result[0][2]>0.1){
 		            $('#result').html("입력하신 성별,나이에 대해 가장 높은 데이터는 소설 입니다");
-	            }else if(result[0][3]==maxValue){
+	            }else if(result[0][3]>0.1){
 		            $('#result').html("입력하신 성별,나이에 대해 가장 높은 데이터는 액션 입니다");
-	            }else if(result[0][4]==maxValue){
+	            }else if(result[0][4]>0.1){
 		            $('#result').html("입력하신 성별,나이에 대해 가장 높은 데이터는 자기개발 입니다");
 	        	}else{
 		            $('#result').html("다시 시도하세요.");
